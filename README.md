@@ -33,6 +33,24 @@ Entwicklung einer statischen HTML/CSS-Website, die bei Änderungen automatisch �
 - Qualität und Vollständigkeit der Dokumentation
 - Codequalität und Best Practices
 
+------------------------------------------------------------
+# Projektarbeit: Dockerisierte HTML/CSS-Website mit GitHub Actions
+
+## 🔧 Projektziel
+Diese Anwendung zeigt eine statische Website, die bei jedem Push automatisch in ein Docker-Image verpackt und auf Docker Hub gepusht wird.
+
+## 📁 Projektstruktur
+- `website/`: Enthält die HTML/CSS-Dateien
+- `Dockerfile`: Definiert das Docker-Image
+- `.github/workflows/`: Enthält den CI/CD-Workflow
+
+## 🚀 Verwendung
+
+### 1. Lokales Bauen & Testen
+
+```bash
+docker build -t meine-website .
+docker run -p 8080:80 meine-website
 
 
 
